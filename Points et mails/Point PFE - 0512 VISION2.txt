@@ -1,0 +1,8 @@
+- Enrechir VIAME
+- Rapport d'avant projet à reprendre
+- Rapport d'ingénierie
+
+
+- Faire des statistiqures sur la precision de la detection 
+- Faire des comparaison sur le tracking 
+- Annotation
