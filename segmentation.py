@@ -64,10 +64,11 @@ def test_segmentation(args):
     results = model.predict(
     args.root_images,
     task=args.task,
-    save=False,
+    save=True,
     show=True,
     conf=0.5,
 )
+    breakpoint()
 
 
 if __name__ == "__main__":
