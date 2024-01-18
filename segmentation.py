@@ -1,76 +1,50 @@
-import argparse
+# main_script.py
 import os
-import random
-
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-import torch
+import argparse
 import yaml
 from PIL import Image
-from torchvision.transforms import ToTensor
-from tqdm import tqdm
 from ultralytics import YOLO
-from webcolors import hex_to_rgb, rgb_to_name
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Segmentation d'image")
-
     parser.add_argument(
-        "--use-cuda",
-        help="Use CUDA.",
-        default=False,
-        type=bool,
-    )
-    parser.add_argument(
-        "--root-images",
-        help="Directory path to images.",
-        default="data/images/image.jpg",
+        "--config",
+        default="config/config.yaml",
         type=str,
-    )
-    parser.add_argument(
-        "--model-fpath",
-        default="test/models/best.pt",
-        type=str,
-        help="file path to load trained model",
-    )
-    parser.add_argument(
-        "--use-CPU",
-        default=True,
-        type=bool,
-        help="Specify whether you are loading trained models on a CPU",
-    )
-    parser.add_argument(
-        "--task",
-        default="segment",
-        type=str,
-        help="Specify the task of the trained model",
+        help="Path to the YAML configuration file.",
     )
     args = parser.parse_args()
     return args
 
+def load_config(config_path):
+    with open(config_path, "r") as f:
+        config = yaml.safe_load(f)
+    return config
+
 def load_networks(args):
-    if args.use_CPU:
-        return YOLO( args.model_fpath 
-)
+    if args["use_CPU"]:
+        return YOLO(args["model_fpath"])
     else:
         pass
 
 def test_segmentation(args):
-    
     model = load_networks(args)
-    breakpoint()
     results = model.predict(
-    args.root_images,
-    task=args.task,
-    save=True,
-    show=True,
-    conf=0.5,
-)
-    breakpoint()
+        args["root_images"],
+        task=args["task"],
+        save=args["save"],
+        show=args["show"],
+        conf=0.5,
+    )
 
+    # Show the results
+    for r in results:
+        im_array = r.plot()  # plot a BGR numpy array of predictions
+        im = Image.fromarray(im_array[..., ::-1])  # RGB PIL image
+        im.show()  # show image
+        im.save('results.jpg')  # save image
 
 if __name__ == "__main__":
     args = parse_args()
-    test_segmentation(args)
+    config = load_config(args.config)
+    test_segmentation(config)
