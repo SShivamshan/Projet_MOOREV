@@ -15,5 +15,8 @@ thop>=0.1.1
 torch>=1.8.0
 webcolors
 ultralytics 
+roboflow
+pip
+imgaug
 
 

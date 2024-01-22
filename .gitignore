@@ -3,3 +3,5 @@
 *cpython*
 /mails
 *.pt
+/data
+/rapports
