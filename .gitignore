@@ -3,8 +3,9 @@
 *cpython*
 /mails
 *.pt
-/data/
-/rapports/
+/data
+/rapports
 
 *.jpg
 *.mp4
+*.pdf
