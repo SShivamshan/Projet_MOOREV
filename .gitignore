@@ -1,5 +1,5 @@
 
-/_pycache_/
+__pycache__/
 *cpython*
 /mails
 *.pt
@@ -9,3 +9,7 @@
 *.jpg
 *.mp4
 *.pdf
+/docker/VIAME-v0.20.3-Linux-64Bit.tar.gz
+/docker/file.txt
+/dataset
+

@@ -1,0 +1,39 @@
+# global pipeline config
+#
+
+# =============================== INPUT FRAME LIST =================================
+
+process detector_input
+  :: image_filter
+  :filter:type                                 vxl_convert_image
+
+  block filter:vxl_convert_image
+    :format                                    byte
+    :force_three_channel                       true
+  endblock
+
+process detector1
+  :: image_object_detector
+  :detector:type                               ocv_windowed
+
+  block detector:ocv_windowed
+    :detector:type                             netharn
+
+    :mode                                      original_and_resized
+    :chip_width                                640
+    :chip_height                               640
+    :chip_adaptive_thresh                      1200000
+
+    block detector:netharn
+      relativepath deployed =                  models/resnet18.pth
+    endblock
+  endblock
+
+connect from detector_input.image
+        to   detector1.image
+
+process detector_output
+  :: merge_detection_sets
+
+connect from detector1.detected_object_set
+        to   detector_output.detected_object_set1
