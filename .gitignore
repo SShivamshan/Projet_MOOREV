@@ -2,7 +2,7 @@
 __pycache__/
 *cpython*
 /mails
-*.pt
+
 /data
 /rapports
 
@@ -12,4 +12,5 @@ __pycache__/
 /docker/VIAME-v0.20.3-Linux-64Bit.tar.gz
 /docker/file.txt
 /dataset
+/runs
 
