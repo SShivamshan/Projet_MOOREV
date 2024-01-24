@@ -8,7 +8,7 @@
     
 ### Folders ### 
 This folder contains the dockerfile for creating the VIAME installation with all its dependencies and another dockerfile for using this docker image as it's based which will be used for the production.
-
+**It's necessary to install the NVIDIA-Container Toolkit in order for the pipelines to work properly : https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html**
 #### Dev dockerfile 
 The moorev_dev.Dockerfile allows to create a docker image with all VIAME Desktop installation. The VIAME Desktop installation needs to be downloaded througth this web page : https://github.com/VIAME/VIAME#installations 
 In order to run this dockerfile, you need to pass the following flags during the docker run : 
