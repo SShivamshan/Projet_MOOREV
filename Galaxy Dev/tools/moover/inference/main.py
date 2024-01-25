@@ -104,15 +104,15 @@ def main(task, video_path, weights_path, conf, output_video_path, output_csv_pat
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('task', type=str, default="track", help='task')
-    parser.add_argument('input_file', type=argparse.FileType('r'), default=sys.stdin, help='input file')
-    parser.add_argument('model_path', type=argparse.FileType('r'), default=sys.stdin, help='model_path') 
+    parser.add_argument('input_file', type=str, help='input file')
+    parser.add_argument('model_path', type=str, help='model_path') 
     parser.add_argument('conf', type=float, default=0.5, help='confidence')
     parser.add_argument('dir', type=str)
 
     args = parser.parse_args()
 
 
-    wights_path = args.dir + "/be45st.pt" if args.model_path == sys.stdin else args.model_path.name
+    wights_path = args.dir + "/best.pt" if args.model_path == "" else args.model_path.name
 
     save(load(wights_path), "model.pt")
 
