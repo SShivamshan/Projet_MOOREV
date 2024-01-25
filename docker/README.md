@@ -27,6 +27,7 @@ The production dockerfile uses the docker image that we created using the dev do
 For the moorev_prod.Dockerfile we need the same flags from before but also the following flag as well : 
 - -v exports:/home/viameuser/exports is a docker
    volume so that we can retrieve the downloaded file
+  
 To build the dockerfile for prod, you need to first pull the docker image that we created : `sudo docker pull shivamshan/moorev_viame` from the terminal or directly download it : https://hub.docker.com/r/shivamshan/moorev_viame
 We first pulled the docker image directly since it's a large image(22.2Gb) and since this will fasten the process. 
 Then run this command to build it's necessary to be in the Projet_moorev folder and run this command : `sudo docker build -t docker_image_name -f docker/moorev_prod.Dockerfile .` since the moorev_prod.Dockerfile uses the image that we pulled before the building of this dockerfile is fast(0.5s at most). 
