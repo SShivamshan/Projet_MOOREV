@@ -2,7 +2,7 @@
 __pycache__/
 *cpython*
 /mails
-*.pt
+
 /data
 /rapports
 
@@ -13,3 +13,6 @@ __pycache__/
 /docker/file.txt
 /dataset
 /export
+/runs
+**/best.pt
+
