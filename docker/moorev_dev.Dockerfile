@@ -34,10 +34,10 @@ RUN chown root:root /opt/noaa/viame/dive/chrome-sandbox && \
     chmod 4755 /opt/noaa/viame/dive/chrome-sandbox
 
 # TO retrieve the downloaded data
-RUN mkdir /home/viameuser/exports
-RUN chmod +w /home/viameuser/exports/
+# RUN mkdir /home/viameuser/exports
+# RUN chmod +w /home/viameuser/exports/
 # VOLUME /home/viameuser/exports
-RUN chown viameuser:viameuser /home/viameuser/exports/
+# RUN chown viameuser:viameuser /home/viameuser/exports/
 
 # USER since ./launch_dive_interface.sh doesn't launch from root
 USER viameuser

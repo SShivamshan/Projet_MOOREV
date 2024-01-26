@@ -1,0 +1,47 @@
+# ==================================================================================
+# Actinia-equinia detector
+# ==================================================================================
+# ============================== GLOBAL PROPERTIES =================================
+# global pipeline config
+#
+config _pipeline:_edge
+  :capacity                                    5
+
+config _scheduler
+  :type                                        pythread_per_process
+
+# =================================== DETECTOR =====================================
+
+process detector_input
+  :: image_filter
+  :filter:type                                 vxl_convert_image
+
+  block filter:vxl_convert_image
+    :format                                    byte
+    :force_three_channel                       true
+  endblock
+
+process detector1
+  :: image_object_detector
+  :detector:type                               ocv_windowed
+
+  block detector:ocv_windowed
+    :detector:type                             species
+    
+    block detector:species
+      relativepath deployed =                  /home/viameuser/VIAME_DATA/DIVE_Pipelines/Acuqinia/best_Gibbula-Actinia.zip
+    endblock
+  endblock
+
+connect from detector_input.image
+        to   detector1.image
+
+process detector_output
+  :: merge_detection_sets
+
+connect from detector1.detected_object_set
+        to   detector_output.detected_object_set1
+
+
+
+# -- end of file --
