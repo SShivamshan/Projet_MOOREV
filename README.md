@@ -9,9 +9,14 @@
 
 4. **Accès aux Outils :** Tous les outils sont accessibles sur le portail [Galaxy Europe](https://usegalaxy.eu/) afin de rendre ces méthodes d'annotation et d'analyse d'images accessibles à des utilisateurs en ligne.
 
-## Utilisation de l'Interface Web
+## 🤝 *Autors* :
+  Islem KOBBI
+  
+  Lynda FEDDAK  
 
-L'interface web fournit aux utilisateurs un moyen convivial d'annoter des images, de partager des données, de visualiser des résultats et d'analyser des données en écologie. Cela ouvre de nouvelles perspectives pour la participation citoyenne (citizen sciences) dans le domaine de l'écologie.
+  Shivamshan SIVANESAN
+
+  Sofiane OUALI
 
 ## Structure du Projet
 
@@ -52,9 +57,6 @@ https://viame.kitware.com/#/
   Bases de donnees annuelles des accidents corporels de la circulation routiere annees de 2005 a 2022
   https://www.data.gouv.fr/fr/datasets/bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere-annees-de-2005-a-2022/
   
-## 🤝 *Autors* :
-Alhussein JAMIL
-Lynda FEDDAK
 
 ## 🎯 *Project Structure*:
 - *config* : contains the config files
