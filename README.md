@@ -5,7 +5,7 @@
 
 2. **Reconnaissance des Espèces par Machine Learning :** La reconnaissance des espèces cibles en utilisant des techniques d'IA en entraînant des modèles pour la reconnaissance, segmentation et tracking avec [Ultralytics](https://www.ultralytics.com/fr/) [YOLOv8](https://github.com/ultralytics/ultralytics).
 
-3. **Quantification de Caractères Morphologiques et Comportementaux :** Investigation de la quantification de caractères morphologiques d'individus (taille, forme et couleur) et de leur comportement, à partir des outils de la bibliothèque OpenCV [OpenCV](https://opencv.org/) en Python.
+3. **Quantification de Caractères Morphologiques et Comportementaux :** Investigation de la quantification de caractères morphologiques d'individus (taille, forme et couleur) et de leur comportement, à partir des outils de la bibliothèque [OpenCV](https://opencv.org/) en Python.
 
 4. **Accès aux Outils :** Tous les outils sont accessibles sur le portail [Galaxy Europe](https://usegalaxy.eu/) afin de rendre ces méthodes d'annotation et d'analyse d'images accessibles à des utilisateurs en ligne.
 
