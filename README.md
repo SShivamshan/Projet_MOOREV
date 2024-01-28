@@ -43,7 +43,7 @@ python main.py
 
 ## 💡 How to Contribute
 
-1. Clone the repository locally: `git clone https://[github.com/your-username/repo-name](https://github.com/SShivamshan/Projet_MOOREV).git`
+1. Clone the repository locally: git clone https://[github.com/your-username/repo-name](https://github.com/SShivamshan/Projet_MOOREV).git
 2. Create your feature branch: `git checkout -b your-feature-name`
 3. Make your changes and commit: `git commit -m "Added feature X"`
 4. Push your changes to the branch: `git push origin your-feature-name`
