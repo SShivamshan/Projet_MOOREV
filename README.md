@@ -1,99 +1,54 @@
-# Projet MOOREV : Annotation et Analyse d'Images et Vidéos des Espèces Sous-marines
+## Project MOOREV: Annotation and Analysis of Underwater Species Images and Videos
 
-## 🎯 L'objectif du projet 
-1. **Annotation des Images et Vidéos :** Les méthodes d'annotation d'images en déploiant l'outil [VIAME](https://github.com/VIAME/VIAME?tab=readme-ov-file) qui offre l'annotation d'images et de vidéos pour l'annotation par divers utilisateurs, tels que des chercheurs, des étudiants, des enseignants et des animateurs pédagogiques, ainsi que des bénévoles. La platforme web est accessible depuis [viame.kitware.com](https://viame.kitware.com/#/)
+## 🎯 Project Objective
+1. **Image and Video Annotation:** Annotation methods for images using the [VIAME](https://github.com/VIAME/VIAME?tab=readme-ov-file) tool, providing image and video annotation for various users such as researchers, students, teachers, educational facilitators, and volunteers. The web platform is accessible at [viame.kitware.com](https://viame.kitware.com/#/).
 
-2. **Reconnaissance des Espèces par Machine Learning :** La reconnaissance des espèces cibles en utilisant des techniques d'IA en entraînant des modèles pour la reconnaissance, segmentation et tracking avec [Ultralytics](https://www.ultralytics.com/fr/) [YOLOv8](https://github.com/ultralytics/ultralytics).
+2. **Species Recognition through Machine Learning:** Recognition of target species using AI techniques by training models for recognition, segmentation, and tracking with [Ultralytics](https://www.ultralytics.com/fr/) [YOLOv8](https://github.com/ultralytics/ultralytics).
 
-3. **Quantification de Caractères Morphologiques et Comportementaux :** Investigation de la quantification de caractères morphologiques d'individus (taille, forme et couleur) et de leur comportement, à partir des outils de la bibliothèque [OpenCV](https://opencv.org/) en Python.
+3. **Quantification of Morphological and Behavioral Characteristics:** Investigation of the quantification of individual morphological characteristics (size, shape, and color) and behavior using tools from the [OpenCV](https://opencv.org/) library in Python.
 
-4. **Accès aux Outils :** Tous les outils sont accessibles sur le portail [Galaxy Europe](https://usegalaxy.eu/) afin de rendre ces méthodes d'annotation et d'analyse d'images accessibles à des utilisateurs en ligne.
+4. **Access to Tools:** All tools are accessible on the [Galaxy Europe](https://usegalaxy.eu/) portal to make these image annotation and analysis methods available to online users.
 
-## 🤝 *Autors* :
-  Islem KOBBI
-  
-  Lynda FEDDAK  
+## 🤝 Authors:
+- Islem KOBBI
+- Lynda FEDDAK
+- Shivamshan SIVANESAN
+- Sofiane OUALI
 
-  Shivamshan SIVANESAN
+## 📚 Project Structure
 
-  Sofiane OUALI
+- **`/[Galaxy Dev](https://github.com/SShivamshan/Projet_MOOREV/tree/main/Galaxy%20Dev)` :** This directory contains XML scripts for launching tools for the annotation and analysis of underwater species images and videos from the Galaxy platform.
 
-## Structure du Projet
+- **`/[docker](https://github.com/SShivamshan/Projet_MOOREV/tree/main/docker)` :** This directory includes the file `[moorev_dev.Dockerfile](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_dev.Dockerfile)` for creating the VIAME installation with all its dependencies, as well as another `[moorev_prod.Dockerfile](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_prod.Dockerfile)` for using this Docker image as a base, which will be used for production.
 
-- **`/code` :** Contient le code source de l'interface utilisateur et des scripts pour l'annotation et l'analyse d'images.
-- **`/data` :** Emplacement des données d'images et de labels utilisées pour l'entraînement et les tests.
-- **`/docs` :** Documentation détaillée du projet, des méthodologies et des guides d'utilisation.
-- **`/results` :** Stockage des résultats obtenus à partir des analyses et expérimentations.
+- **`/[pipelines](https://github.com/SShivamshan/Projet_MOOREV/tree/main/pipelines)` :** Pipeline .pt files for models trained with YOLOv8.
 
-## Comment Contribuer
+- **`/results` :** Storage of results obtained from analyses and experiments.
 
-1. Clonez le dépôt localement : `git clone https://github.com/votre-utilisateur/nom-du-repo.git`
-2. Créez votre branche de fonctionnalité : `git checkout -b nom-de-votre-fonctionnalité`
-3. Effectuez vos modifications et commit : `git commit -m "Ajout de la fonctionnalité X"`
-4. Poussez vos modifications vers la branche : `git push origin nom-de-votre-fonctionnalité`
-5. Créez une Pull Request pour discuter des modifications apportées.
+## 🛠 Requirements
 
-Nous encourageons toute contribution, qu'il s'agisse de rapports de bugs, de nouvelles fonctionnalités ou d'améliorations de la documentation.
+Pip install `[requirements](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt)` in a Python>=3.8 environment with PyTorch>=1.8.
 
----
-
-N'oubliez pas de personnaliser ce modèle en fonction des spécificités de votre projet. Cette structure offre une vue d'ensemble claire de l'objectif du projet, des fonctionnalités, de l'utilisation de l'interface web, de la structure du projet et des instructions pour contribuer.
-
-# *GBIF :*
-https://www.gbif.org/fr/
-
-# *DORIS :*
-https://doris.ffessm.fr/
-
-# *BERNIC&CLIC :*
-https://bernic.bzh/application/
-
-# *VIAME :*
-https://viame.kitware.com/#/
-
-# Projet Gestion De Bases De Donnees
-## 📁 *Dataset* : 
-  (No need to download it, it is already in the project)
-  Bases de donnees annuelles des accidents corporels de la circulation routiere annees de 2005 a 2022
-  https://www.data.gouv.fr/fr/datasets/bases-de-donnees-annuelles-des-accidents-corporels-de-la-circulation-routiere-annees-de-2005-a-2022/
-  
-
-## 🎯 *Project Structure*:
-- *config* : contains the config files
-- *data* : contains the data files
-- *schemas* : contains the generated schemas of the database, this includes the MCD(Modele Conceptuel de Donnees) and the MLD(Modele Logique de Donnees). 
-- *src* : contains the source code of the project
-
-
-## ⚙️ *Requirements*:
-- python >= 3.10.11
-install python : https://www.python.org/downloads/
-
-## ⬇️ *Installation*:
-- create a virtual environment using venv, pyenv or conda
-- install requirements.txt
 ```bash
 pip install --upgrade -r requirements.txt
 ```
 
-## ⌛ *Prepare Database*:
-We use mysql database, we provide the .sql script to create the database and tables.
-- create a database named "accidentsroutiers": 
+## 🚀 Run:
 ```bash
-mysql -u root -p
-CREATE DATABASE accidentsroutiers;
+python main.py
 ```
-- create tables and populate them:
-```bash
-mysql -u root -p accidentsroutiers < accidentsroutiers.sql
-```
-- create a user named "some_user_name" with password "some_password" and grant him all privileges on the database "accidentsroutiers".
-- change the config file config/user_config.yaml with the user name and password you created.
 
-## 🚀 *Run*:
-```bash
-python main.py 
-```
-you can use the following arguments:
-  - -p : to show the plots only 
-  - -a : to not run the application
+## 🚀 Results:
+
+
+## 💡 How to Contribute
+
+1. Clone the repository locally: `git clone https://[github.com/your-username/repo-name](https://github.com/SShivamshan/Projet_MOOREV).git`
+2. Create your feature branch: `git checkout -b your-feature-name`
+3. Make your changes and commit: `git commit -m "Added feature X"`
+4. Push your changes to the branch: `git push origin your-feature-name`
+5. Create a Pull Request to discuss the changes made.
+
+We encourage any contributions, whether they be bug reports, new features, or improvements to the documentation.
+
+
