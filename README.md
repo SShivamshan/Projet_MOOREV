@@ -27,27 +27,15 @@
 
 ## 🛠 Requirements
 
-Pip install <span style="background-color: #f2f2f2; padding: 2px; border-radius: 4px;">
-  [<a href="https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt" style="text-decoration: none; color: black;">Pip install requirements</a>]
-</span>
-
- in a Python>=3.8 environment with PyTorch>=1.8.
+Pip install `[requirements](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt)` in a Python>=3.8 environment with PyTorch>=1.8.
 
 ```bash
 pip install --upgrade -r requirements.txt
 ```
 
-## 🚀 Run:
-```bash
-python main.py
-```
+## 🎢 How to Contribute
 
-## 🚀 Results:
-
-
-## 💡 How to Contribute
-
-1. Clone the repository locally: git clone https://[github.com/your-username/repo-name](https://github.com/SShivamshan/Projet_MOOREV).git
+1. Clone the repository locally: `git clone https://`[`github.com/your-username/repo-name`](https://github.com/SShivamshan/Projet_MOOREV)`.git`
 2. Create your feature branch: `git checkout -b your-feature-name`
 3. Make your changes and commit: `git commit -m "Added feature X"`
 4. Push your changes to the branch: `git push origin your-feature-name`
@@ -55,4 +43,9 @@ python main.py
 
 We encourage any contributions, whether they be bug reports, new features, or improvements to the documentation.
 
+## 🚀 Run:
+```bash
+python main.py
+```
 
+## 🚀 Results:
