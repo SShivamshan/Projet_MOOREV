@@ -17,17 +17,17 @@
 
 ## 📚 Project Structure
 
-- **`/[Galaxy Dev](https://github.com/SShivamshan/Projet_MOOREV/tree/main/Galaxy%20Dev)` :** This directory contains XML scripts for launching tools for the annotation and analysis of underwater species images and videos from the Galaxy platform.
+- **/[`Galaxy Dev`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/Galaxy%20Dev) :** This directory contains XML scripts for launching tools for the annotation and analysis of underwater species images and videos from the Galaxy platform.
 
-- **`/[docker](https://github.com/SShivamshan/Projet_MOOREV/tree/main/docker)` :** This directory includes the file `[moorev_dev.Dockerfile](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_dev.Dockerfile)` for creating the VIAME installation with all its dependencies, as well as another `[moorev_prod.Dockerfile](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_prod.Dockerfile)` for using this Docker image as a base, which will be used for production.
+- **/[`docker`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/docker)` :** This directory includes the file [`moorev_dev.Dockerfile`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_dev.Dockerfile) for creating the VIAME installation with all its dependencies, as well as another [`moorev_prod.Dockerfile`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_prod.Dockerfile) for using this Docker image as a base, which will be used for production.
 
-- **`/[pipelines](https://github.com/SShivamshan/Projet_MOOREV/tree/main/pipelines)` :** Pipeline .pt files for models trained with YOLOv8.
+- **/[`pipelines`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/pipelines) :** Pipeline .pt files for models trained with YOLOv8.
 
 - **`/results` :** Storage of results obtained from analyses and experiments.
 
 ## 🛠 Requirements
 
-Pip install `[requirements](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt)` in a Python>=3.8 environment with PyTorch>=1.8.
+Pip install [`requirements`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt) in a Python>=3.8 environment with PyTorch>=1.8.
 
 ```bash
 pip install --upgrade -r requirements.txt
