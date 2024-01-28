@@ -27,7 +27,10 @@
 
 ## 🛠 Requirements
 
-Pip install <span style="color: gray">[Pip install requirements](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt)</span>
+Pip install <span style="background-color: #f2f2f2; padding: 2px; border-radius: 4px;">
+  [<a href="https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt" style="text-decoration: none; color: black;">Pip install requirements</a>]
+</span>
+
  in a Python>=3.8 environment with PyTorch>=1.8.
 
 ```bash
