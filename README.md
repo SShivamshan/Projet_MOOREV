@@ -27,7 +27,8 @@
 
 ## 🛠 Requirements
 
-Pip install `[requirements](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt)` in a Python>=3.8 environment with PyTorch>=1.8.
+Pip install <span style="color: gray">[Pip install requirements](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt)</span>
+ in a Python>=3.8 environment with PyTorch>=1.8.
 
 ```bash
 pip install --upgrade -r requirements.txt
