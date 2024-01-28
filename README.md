@@ -1,6 +1,6 @@
 ## Project MOOREV: Annotation and Analysis of Underwater Species Images and Videos
 
-## 🎯 Project Objective
+## 🎯 *Project Objective*
 1. **Image and Video Annotation:** Annotation methods for images using the [VIAME](https://github.com/VIAME/VIAME?tab=readme-ov-file) tool, providing image and video annotation for various users such as researchers, students, teachers, educational facilitators, and volunteers. The web platform is accessible at [viame.kitware.com](https://viame.kitware.com/#/).
 
 2. **Species Recognition through Machine Learning:** Recognition of target species using AI techniques by training models for recognition, segmentation, and tracking with [Ultralytics](https://www.ultralytics.com/fr/) [YOLOv8](https://github.com/ultralytics/ultralytics).
@@ -9,13 +9,13 @@
 
 4. **Access to Tools:** All tools are accessible on the [Galaxy Europe](https://usegalaxy.eu/) portal to make these image annotation and analysis methods available to online users.
 
-## 🤝 Authors:
+## 🤝 *Authors*
 - Islem KOBBI
 - Lynda FEDDAK
 - Shivamshan SIVANESAN
 - Sofiane OUALI
 
-## 📚 Project Structure
+## 📚 *Project Structure*
 
 - **/[`Galaxy Dev`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/Galaxy%20Dev) :** This directory contains XML scripts for launching tools for the annotation and analysis of underwater species images and videos from the Galaxy platform.
 
@@ -25,7 +25,7 @@
 
 - **`/results` :** Storage of results obtained from analyses and experiments.
 
-## 🛠 Requirements
+## 🛠 *Requirements*
 
 Pip install [`requirements`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/requirements.txt) in a Python>=3.8 environment with PyTorch>=1.8.
 
@@ -33,7 +33,7 @@ Pip install [`requirements`](https://github.com/SShivamshan/Projet_MOOREV/blob/m
 pip install --upgrade -r requirements.txt
 ```
 
-## 🎢 How to Contribute
+## 💡 *How to Contribute*
 
 1. Clone the repository locally: `git clone https://`[`github.com/your-username/repo-name`](https://github.com/SShivamshan/Projet_MOOREV)`.git`
 2. Create your feature branch: `git checkout -b your-feature-name`
@@ -43,9 +43,9 @@ pip install --upgrade -r requirements.txt
 
 We encourage any contributions, whether they be bug reports, new features, or improvements to the documentation.
 
-## 🚀 Run:
+## 🚀 *Run*
 ```bash
 python main.py
 ```
 
-## 🚀 Results:
+## ⌛ *Results*
