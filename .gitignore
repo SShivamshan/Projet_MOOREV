@@ -15,4 +15,5 @@ __pycache__/
 /export
 /runs
 **/best.pt
+*.zip
 
