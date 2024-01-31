@@ -1,8 +1,0 @@
-# config prediction segmentation 
-use_cuda: false
-root_images: data/images/image.jpg
-model_fpath: best.pt
-use_CPU: true
-task: segment
-save: False
-show: True
