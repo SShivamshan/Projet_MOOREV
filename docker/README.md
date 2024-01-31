@@ -1,11 +1,12 @@
 
 ### Folder Tree ###
+```
 |── docker                
     │   ├── chrome.json                            
     │   ├── moorev_prod.Dockerfile  
     |   ├── moorev_dev.Dockerfile  
     |   └── README.md 
-    
+```
 ### Folders ### 
 This folder contains the dockerfile for creating the VIAME installation with all its dependencies and another dockerfile for using this docker image as it's based which will be used for the production.
 **It's necessary to install the NVIDIA-Container Toolkit in order for the pipelines to work properly : https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html**
