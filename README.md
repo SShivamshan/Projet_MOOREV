@@ -1,4 +1,5 @@
 ## Project MOOREV: Annotation and Analysis of Underwater Species Images and Videos
+![Alt Text](results/logo.jpg)
 
 ## 🎯 *Project Objective*
 1. **Image and Video Annotation:** Annotation methods for images using the [VIAME](https://github.com/VIAME/VIAME?tab=readme-ov-file) tool, providing image and video annotation for various users such as researchers, students, teachers, educational facilitators, and volunteers. The web platform is accessible at [viame.kitware.com](https://viame.kitware.com/#/).
