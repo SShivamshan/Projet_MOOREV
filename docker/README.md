@@ -29,9 +29,7 @@ n the final command, such as for the developpement Dockerfile, replace <desired_
 
 ### Prod dockerfile
 The production Dockerfile (moorev_prod.Dockerfile) utilizes the Docker image created using the development Dockerfile, which is also accessible on the Docker Hub.
-To run the moorev_prod.Dockerfile, you will require the same flags as mentioned earlier, and additionally, include the following flag:
-- -v exports:/home/viameuser/exports is a docker
-   volume so that we can retrieve the downloaded file
+To run the moorev_prod.Dockerfile, you will require the same flags as mentioned earlier with two other flags that will be talked about down below. 
   
 To build the production Dockerfile, start by pulling the previously created Docker image using the following command in the terminal: `sudo docker pull shivamshan/moorev_viame` Alternatively, you can download the image directly from the Docker Hub: [https://hub.docker.com/r/shivamshan/moorev_viame].
 Ensure that the necessary Docker image is available before proceeding with the construction of the production Dockerfile. 
