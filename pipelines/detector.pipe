@@ -23,16 +23,12 @@ process detector_input
 
 process detector1
   :: image_object_detector
-  :detector:type                               ocv_windowed
-
-  block detector:ocv_windowed
-    :detector:type                             species
+  :detector:type                               species
     
-    block detector:species
-      relativepath deployed =                  /home/viameuser/VIAME_DATA/DIVE_Pipelines/Acuqinia/best_Gibbula-Actinia.zip
-    endblock
+  block detector:species
+    relativepath deployed=                     best_Gibbula_Actinia.zip
   endblock
-
+  
 connect from detector_input.image
         to   detector1.image
 

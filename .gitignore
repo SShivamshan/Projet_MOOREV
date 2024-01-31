@@ -1,11 +1,12 @@
 
 __pycache__/
 *cpython*
+# Folder with all the mails send between us and M.Le Bras and M.Bris
 /mails
 
+# Folder coming from our own local repo 
 /data
 /rapports
-
 *.jpg
 *.mp4
 *.pdf
@@ -15,5 +16,6 @@ __pycache__/
 /export
 /runs
 **/best.pt
+temp.py
 *.zip
 
