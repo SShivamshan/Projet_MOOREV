@@ -1,18 +1,22 @@
 
 ### Folder Tree ###
+```
 |── docker                
     │   ├── chrome.json                            
     │   ├── moorev_prod.Dockerfile  
     |   ├── moorev_dev.Dockerfile  
     |   └── README.md 
-    
+```
 ### Folders ### 
-This folder contains the dockerfile for creating the VIAME installation with all its dependencies and another dockerfile for using this docker image as it's based which will be used for the production.
-**It's necessary to install the NVIDIA-Container Toolkit in order for the pipelines to work properly : https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html**
+This directory comprises two Dockerfiles: one for building the VIAME installation along with all its dependencies, and another for utilizing the resultant Docker image as a base. The latter will be employed for production purposes.
+
+**It is imperative to install the NVIDIA-Container Toolkit to ensure the proper functioning of the pipelines. For installation instructions, please refer to: [https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html]**
+
 
 ### Dev dockerfile 
-The moorev_dev.Dockerfile allows to create a docker image with all VIAME Desktop installation. The VIAME Desktop installation needs to be downloaded througth this web page : https://github.com/VIAME/VIAME#installations 
-In order to run this dockerfile, you need to pass the following flags during the docker run : 
+The moorev_dev.Dockerfile enables the creation of a Docker image encompassing the entire VIAME Desktop installation. To acquire the VIAME Desktop installation, please download it from the following webpage: [https://github.com/VIAME/VIAME#installations].
+
+To execute this Dockerfile, ensure that the following flags are passed during the docker run command: 
 `sudo docker run `  
 - -p for the port
 - --gpus all : to give access to the GPU of the host machine
@@ -21,21 +25,22 @@ In order to run this dockerfile, you need to pass the following flags during the
 - -v /tmp/.X11-unix:/tmp/.X11-unix for X windows system in order to run the graphical application inside the docker and display it 
 - -v $HOME/.Xauthority:/root/.Xauthority needed for the authentification of X window system for the GUI to run properly
 
-The final command would looks like this for the prod dockerfile : `sudo docker run -p 9876:9876 -it --gpus all --name page_web -e DISPLAY=:1 --security-opt seccomp=docker/chrome.json -e ELECTRON_ENABLE_LOGGING=true -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.Xauthority:/root/.Xauthority docker_image name`
+n the final command, such as for the developpement Dockerfile, replace <desired_port>, <container_name>, and <docker_image_name> with the appropriate values. For example: : `sudo docker run -p 9876:9876 -it --gpus all --name page_web -e DISPLAY=:1 --security-opt seccomp=docker/chrome.json -e ELECTRON_ENABLE_LOGGING=true -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.Xauthority:/root/.Xauthority docker_image name`
 
 ### Prod dockerfile
-The production dockerfile uses the docker image that we created using the dev dockerfile which is also available on the docker hub.  
-For the moorev_prod.Dockerfile we need the same flags from before but also the following flag as well : 
+The production Dockerfile (moorev_prod.Dockerfile) utilizes the Docker image created using the development Dockerfile, which is also accessible on the Docker Hub.
+To run the moorev_prod.Dockerfile, you will require the same flags as mentioned earlier, and additionally, include the following flag:
 - -v exports:/home/viameuser/exports is a docker
    volume so that we can retrieve the downloaded file
   
-To build the dockerfile for prod, you need to first pull the docker image that we created : `sudo docker pull shivamshan/moorev_viame` from the terminal or directly download it : https://hub.docker.com/r/shivamshan/moorev_viame
-We first pulled the docker image directly since it's a large image(22.2Gb) and since this will fasten the process. 
-Then run this command to build it's necessary to be in the Projet_moorev folder and run this command : `sudo docker build -t docker_image_name -f docker/moorev_prod.Dockerfile .` since the moorev_prod.Dockerfile uses the image that we pulled before the building of this dockerfile is fast(0.5s at most). 
+To build the production Dockerfile, start by pulling the previously created Docker image using the following command in the terminal: `sudo docker pull shivamshan/moorev_viame` Alternatively, you can download the image directly from the Docker Hub: [https://hub.docker.com/r/shivamshan/moorev_viame].
+Ensure that the necessary Docker image is available before proceeding with the construction of the production Dockerfile. 
+
+To expedite the process, it is recommended to pull the Docker image directly, especially considering its substantial size (22.2 GB). Once the image has been successfully pulled, navigate to the Projet_moorev folder and execute the following command to initiate the build process: `sudo docker build -t docker_image_name -f docker/moorev_prod.Dockerfile .` since the moorev_prod.Dockerfile uses the image that we pulled before the building of this dockerfile is fast(0.5s at most). 
 
 The final command would looks like this for the prod dockerfile in order to run it : `sudo docker run -p 9876:9876 --gpus all -it --name container name -e DISPLAY=:1 --security-opt seccomp=docker/chrome.json -e ELECTRON_ENABLE_LOGGING=true -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.Xauthority:/root/.Xauthority --mount type=bind,source="$(pwd)"/export,target=/home/viameuser/export --mount type=bind,source="$(pwd)"/dataset/images,target=/home/viameuser/image docker container name`
 
-This command will launch VIAME Desktop on the web accessible through the following URL : http://localhost:9876/
+This command initiates VIAME Desktop for web access, accessible through the URL: [http://localhost:9876/].
 
 To facilitate the transfer of images and retrieve annotated data with VIAME, we utilize the --mount option to bind mount host directories into the Docker container.
 ### Mounting the Dataset of Images
