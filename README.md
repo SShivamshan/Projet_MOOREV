@@ -57,5 +57,5 @@ python main.py
 
 ### *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
 
-https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4
+![Nom de la vidéo](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)
 
