@@ -79,11 +79,11 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 
 ## ⌛ *Results*
 ### *Segmentation on images*
-![Alt Text](results/segentation on images.jpg)
+![Alt Text](results/segmentation on images.jpg)
 
 ### *Tracking on a video*
 
-![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/tracking%20actinia-equina.avi)
+![Tracking actinia-equina](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/tracking%20actinia-equina.avi)
 
 ### *Annotation on [VIAME](https://viame.kitware.com/#/)*
 
