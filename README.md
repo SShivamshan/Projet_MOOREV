@@ -8,7 +8,7 @@
 
 3. **Quantification of Morphological and Behavioral Characteristics:** Investigation of the quantification of individual morphological characteristics (size, shape, and color) and behavior using tools from the [OpenCV](https://opencv.org/) library in Python.
 
-4. **Access to Tools:** All tools are accessible on the [Galaxy-Ecology Europe](https://usegalaxy.eu/) portal to make these image annotation and analysis methods available to online users.
+4. **Access to Tools:** "Ensure accessibility of all tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/) portal to make these image annotation and analysis methods available to online users.
 
 ## 🤝 *Authors*
 - Islem KOBBI
