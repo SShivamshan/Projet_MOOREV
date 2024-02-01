@@ -64,7 +64,7 @@ python train\main.py --names "class1,class2,class3" --nb_epoch 10 --nb_batch 8 -
     --seed                         # Random seed for reproducibility
 ```
 
-### Inference
+### Inference - Segmentation, Tracking and Features Extraction
 In order to test the trained model on your local machine to segment, track on videos, and extract features of the species, run the following command:
 ```bash
 python inference\main.py input_file model_path conf dir save_csv save_prediction save_annotation
