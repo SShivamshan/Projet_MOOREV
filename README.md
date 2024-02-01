@@ -8,7 +8,7 @@
 
 3. **Quantification of Morphological and Behavioral Characteristics:** Investigation of the quantification of individual morphological characteristics (size, shape, and color) and behavior using tools from the [OpenCV](https://opencv.org/) library in Python.
 
-4. **Access to Tools:** All tools are accessible on the [Galaxy Europe](https://usegalaxy.eu/) portal to make these image annotation and analysis methods available to online users.
+4. **Access to Tools:** All tools are accessible on the [Galaxy-Ecology Europe](https://usegalaxy.eu/) portal to make these image annotation and analysis methods available to online users.
 
 ## 🤝 *Authors*
 - Islem KOBBI
@@ -21,7 +21,8 @@
 - **/[`Galaxy Dev`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/Galaxy%20Dev) :** This directory contains XML scripts for launching tools for the annotation and analysis of underwater species images and videos from the Galaxy platform.
 
 - **/[`docker`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/docker) :** This directory includes the file [`moorev_dev.Dockerfile`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_dev.Dockerfile) for creating the VIAME installation with all its dependencies, as well as another [`moorev_prod.Dockerfile`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_prod.Dockerfile) for using this Docker image as a base, which will be used for production.
-
+- **/[`docs`] : The directory contains the project documentation
+- **/[`models`] : The directory contains the trained YOLOv8 models (.pt files)
 - **/[`pipelines`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/pipelines) :** This directory contains the necessary files for creating a pipeline
  .pt files for models trained with YOLOv8.
 - **`/results` :** Storage of results obtained from analyses and experiments.
@@ -50,3 +51,8 @@ python main.py
 ```
 
 ## ⌛ *Results*
+### *Annotation on [VIAME](https://viame.kitware.com/#/)*
+![Video](results/annotation on VIAME.avi)
+
+### *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
+![Video](results/Launch tools on Galxy.mp4)
