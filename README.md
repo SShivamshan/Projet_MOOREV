@@ -78,10 +78,10 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 ```
 
 ## ⌛ *Results*
-### *Segmentation on images*
+### *Image Segmentation*
 ![Alt Text](results/segmentation_on_images.jpg)
 
-### *Tracking on a video*
+### *Video Tracking*
 
 ![Tracking actinia-equina](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/tracking%20actinia-equina.avi)
 
