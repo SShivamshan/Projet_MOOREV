@@ -55,4 +55,4 @@ python main.py
 ![Video](results/annotation on VIAME.avi)
 
 ### *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
-![Video](results/Launch tools on Galxy.mp4)
+(https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4
