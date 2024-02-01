@@ -47,7 +47,7 @@ We encourage any contributions, whether they be bug reports, new features, or im
 
 ## 🚀 *Run tools*
 
-### Training
+👉 ### Training
 In order to train your own model, run the following command:
 ```bash
 python train\main.py --names "class1,class2,class3" --nb_epoch 10 --nb_batch 8 --model_path path/to/model --dir path/to/directory --training_data path/to/training_data.zip --optimizer "adam" --lr0 0.001 --lrf 0.0001 --momentum 0.9 --seed 42
@@ -64,7 +64,7 @@ python train\main.py --names "class1,class2,class3" --nb_epoch 10 --nb_batch 8 -
     --seed                         # Random seed for reproducibility
 ```
 
-### Inference - Segmentation, Tracking and Features Extraction
+👉 ### Inference - Segmentation, Tracking and Features Extraction
 In order to test the trained model on your local machine to segment, track on videos, and extract features of the species, run the following command:
 ```bash
 python inference\main.py input_file model_path conf dir save_csv save_prediction save_annotation
@@ -78,18 +78,18 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 ```
 
 ## ⌛ *Results*
-### *Image Segmentation*
+👉 ### *Image Segmentation*
 ![Alt Text](results/segmentation_on_images.jpg)
 
-### *Video Tracking*
+👉 ### *Video Tracking*
 
 ![Tracking actinia-equina](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/tracking%20actinia-equina.avi)
 
-### *Annotation on [VIAME](https://viame.kitware.com/#/)*
+👉 ### *Annotation on [VIAME](https://viame.kitware.com/#/)*
 
 ![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/annotation%20on%20VIAME.avi)
 
-### *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
+👉 ### *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
 
 ![Launch tools on Galaxy](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)
 
