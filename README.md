@@ -73,6 +73,8 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 
 ### 👉 *Video Tracking*
 
+https://drive.google.com/file/d/1B2IfCy34-bOyBbm0VdplWh_rVWwKyDyh/view?usp=sharing
+
 ![Tracking actinia-equina](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/tracking%20actinia-equina.avi)
 
 ### 👉 *Annotation on [VIAME](https://viame.kitware.com/#/)*
@@ -82,6 +84,8 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 ![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/annotation%20on%20VIAME.avi)
 
 ### 👉 *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
+
+https://drive.google.com/file/d/1TwbuNQCIvGWqgzgRykrrnyjVXBdwhzKj/view?usp=sharing
 
 ![Launch tools on Galaxy](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)
 
