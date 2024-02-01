@@ -35,16 +35,6 @@ Pip install [`requirements`](https://github.com/SShivamshan/Projet_MOOREV/blob/m
 pip install --upgrade -r requirements.txt
 ```
 
-## 💡 *How to Contribute*
-
-1. Clone the repository locally: `git clone https://`[`github.com/your-username/repo-name`](https://github.com/SShivamshan/Projet_MOOREV)`.git`
-2. Create your feature branch: `git checkout -b your-feature-name`
-3. Make your changes and commit: `git commit -m "Added feature X"`
-4. Push your changes to the branch: `git push origin your-feature-name`
-5. Create a Pull Request to discuss the changes made.
-
-We encourage any contributions, whether they be bug reports, new features, or improvements to the documentation.
-
 ## 🚀 *Run tools*
 
 ### 👉 Training
@@ -93,3 +83,12 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 
 ![Launch tools on Galaxy](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)
 
+## 💡 *How to Contribute*
+
+1. Clone the repository locally: `git clone https://`[`github.com/your-username/repo-name`](https://github.com/SShivamshan/Projet_MOOREV)`.git`
+2. Create your feature branch: `git checkout -b your-feature-name`
+3. Make your changes and commit: `git commit -m "Added feature X"`
+4. Push your changes to the branch: `git push origin your-feature-name`
+5. Create a Pull Request to discuss the changes made.
+
+We encourage any contributions, whether they be bug reports, new features, or improvements to the documentation.
