@@ -45,12 +45,46 @@ pip install --upgrade -r requirements.txt
 
 We encourage any contributions, whether they be bug reports, new features, or improvements to the documentation.
 
-## 🚀 *Run*
+## 🚀 *Run tools*
+
+### Training
+In order to train your own model, run the following command:
 ```bash
-python main.py
+python train\main.py --names "class1,class2,class3" --nb_epoch 10 --nb_batch 8 --model_path path/to/model --dir path/to/directory --training_data path/to/training_data.zip --optimizer "adam" --lr0 0.001 --lrf 0.0001 --momentum 0.9 --seed 42
+    --names                        # Comma-separated list of class names
+    --nb_epoch                     # Number of epochs for training
+    --nb_batch                     # Batch size for training
+    --model_path                   # Path to the YOLOv8 model. If using the default model, specify "default".
+    --dir                          # Directory where the model is stored
+    --training_data                # Path to the training data zip file
+    --optimizer                    # Optimizer for training (e.g., "adam")
+    --lr0                          # Initial learning rate
+    --lrf                          # Final learning rate
+    --momentum                     # Momentum value
+    --seed                         # Random seed for reproducibility
+```
+
+### Inference
+In order to test the trained model on your local machine to segment, track on videos, and extract features of the species, run the following command:
+```bash
+python inference\main.py input_file model_path conf dir save_csv save_prediction save_annotation
+   --input_file                   # Path to the input file. It could be an image or a video.
+   --model_path                   # Path to the trained model. 
+   --conf                         # Confidence in percentage.
+   --dir                          # Directory of the model.
+   --save_csv                     # True or False to specify whether to save the CSV file.
+   --save_prediction              # True or False to specify whether to save predictions.
+   --save_annotation              # True or False to specify whether to save annotations.
 ```
 
 ## ⌛ *Results*
+### *Segmentation on images*
+![Alt Text](results/segentation on images.jpg)
+
+### *Tracking on a video*
+
+![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/tracking%20actinia-equina.avi)
+
 ### *Annotation on [VIAME](https://viame.kitware.com/#/)*
 
 ![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/annotation%20on%20VIAME.avi)
