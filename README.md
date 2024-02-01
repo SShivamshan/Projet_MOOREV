@@ -77,6 +77,8 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 
 ### 👉 *Annotation on [VIAME](https://viame.kitware.com/#/)*
 
+https://drive.google.com/file/d/1Y61SfjiHL9Od91ysz8eNJ0P-5edIorzB/view?usp=drive_link
+
 ![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/annotation%20on%20VIAME.avi)
 
 ### 👉 *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
