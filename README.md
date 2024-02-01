@@ -53,9 +53,9 @@ python main.py
 ## ⌛ *Results*
 ### *Annotation on [VIAME](https://viame.kitware.com/#/)*
 
-![Nom de la vidéo](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/annotation%20on%20VIAME.avi)
+![Annotation on VIAME](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/annotation%20on%20VIAME.avi)
 
 ### *Launch tools on [Galaxy-Ecology Europe](https://usegalaxy.eu/)*
 
-![Nom de la vidéo](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)
+![Launch tools on Galaxy](https://github.com/SShivamshan/Projet_MOOREV/blob/main/results/Launch%20tools%20on%20Galxy.mp4)
 
