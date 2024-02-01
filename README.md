@@ -79,7 +79,7 @@ python inference\main.py input_file model_path conf dir save_csv save_prediction
 
 ## ⌛ *Results*
 ### *Segmentation on images*
-![Alt Text](results/segmentation on images.jpg)
+![Alt Text](results/segmentation_on_images.jpg)
 
 ### *Tracking on a video*
 
