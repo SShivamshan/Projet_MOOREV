@@ -22,8 +22,8 @@
 
 - **/[`docker`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/docker) :** This directory includes the file [`moorev_dev.Dockerfile`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_dev.Dockerfile) for creating the VIAME installation with all its dependencies, as well as another [`moorev_prod.Dockerfile`](https://github.com/SShivamshan/Projet_MOOREV/blob/main/docker/moorev_prod.Dockerfile) for using this Docker image as a base, which will be used for production.
 
-- **/[`pipelines`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/pipelines) :** Pipeline .pt files for models trained with YOLOv8.
-
+- **/[`pipelines`](https://github.com/SShivamshan/Projet_MOOREV/tree/main/pipelines) :** This directory contains the necessary files for creating a pipeline
+ .pt files for models trained with YOLOv8.
 - **`/results` :** Storage of results obtained from analyses and experiments.
 
 ## 🛠 *Requirements*
